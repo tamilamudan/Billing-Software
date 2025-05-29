@@ -57,7 +57,6 @@ public class login extends javax.swing.JFrame {
 
         jTextField1.setBackground(new java.awt.Color(255, 255, 255,01));
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14));
-        jTextField1.setText("enter text");
         jTextField1.setBorder(null);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

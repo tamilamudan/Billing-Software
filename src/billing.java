@@ -525,6 +525,7 @@ public int finalTotal = 0;
         // TODO add your handling code here:
         String name = jTextField1.getText();
         String contact  = jTextField2.getText();
+        String contact_shop  = jTextField13.getText();
         String mail  = jTextField3.getText();
         String path = "D:\\java project\\invoice\\";
         String sname = jTextField12.getText();
@@ -537,7 +538,7 @@ public int finalTotal = 0;
     Paragraph paragraph1=new Paragraph("");
     doc.add(paragraph1);
     Paragraph paragraph2=new Paragraph("Date & Time:"+jLabel4.getText()+" "+jLabel5.getText()+"\n****************************************"+
-            "\n SHOP DETAILS \n Name:"+sname+"\nContact NO:"+contact+"\nAddress:\n"+sadd+"\n****************************************"
+            "\n SHOP DETAILS \n Name:"+sname+"\nContact NO:"+contact_shop+"\nAddress:\n"+sadd+"\n****************************************"
             +"\nBuyer Details:\nName:"+name+"\nContact NO;"+contact+"\nMail:"+mail+"\n ");
     doc.add(paragraph2);
     PdfPTable tbl=new PdfPTable(5);
