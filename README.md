@@ -31,7 +31,8 @@ A Java-based Billing Software designed for retail stores and small businesses to
 ![Product Billing](https://github.com/user-attachments/assets/79b55045-e9cc-4b7e-8246-d71f68281899)
 
 **Invoice stored by customer name and date**  
-[receiptTamilamudan29-05-2025.pdf](https://github.com/user-attachments/files/20503788/receiptTamilamudan29-05-2025.pdf)
+![image](https://github.com/user-attachments/assets/16ab631c-3f73-4733-beec-d32379762e4d)
+
 
 ## 📦 Installation & Setup
 
