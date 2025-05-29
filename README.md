@@ -1,3 +1,4 @@
+
 # Billing Software
 
 A Java-based Billing Software designed for retail stores and small businesses to streamline billing and inventory management. Built using **Java Swing**, **MySQL**, and **iText**, this application provides a user-friendly GUI for managing products, generating bills, and creating PDF invoices.
@@ -34,16 +35,24 @@ A Java-based Billing Software designed for retail stores and small businesses to
 
 ## 📦 Installation & Setup
 
-1. **Clone the repository**
+### 1. Clone the repository
 
-   ```bash
-   git clone https://github.com/tamilamudan/Billing-Software.git
-   cd Billing-Software
-2. Setup the MySQL Database
-Log in to your MySQL server using your terminal or MySQL Workbench:
+```bash
+git clone https://github.com/tamilamudan/Billing-Software.git
+cd Billing-Software
+```
 
+### 2. Setup the MySQL Database
+
+Log in to your MySQL server using terminal or MySQL Workbench:
+
+```bash
 mysql -u root -p
+```
 
+Run the following SQL commands to create the database and tables:
+
+```sql
 CREATE DATABASE billingsoftware;
 USE billingsoftware;
 
@@ -60,10 +69,13 @@ CREATE TABLE users (
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL
 );
+```
 
-3. Configure Database Connection
-Open the file located at src/project/ConnectionProvider.java and update your MySQL credentials:
+### 3. Configure Database Connection
 
+Open `src/project/ConnectionProvider.java` and update the credentials as needed:
+
+```java
 package project;
 
 import java.sql.Connection;
@@ -85,24 +97,34 @@ public class ConnectionProvider {
         }
     }
 }
+```
 
-4. Build and Run the Application
-Using the Command Line
-Make sure you are in the project root folder, then compile and run:
+### 4. Build and Run the Application
 
+#### Using the Command Line
+
+Compile and run from the project root folder:
+
+```bash
 javac -d bin src/project/ConnectionProvider.java src/login.java
 java -cp bin login
+```
 
-🚀 Usage
-Use the GUI to add, update, and delete products.
+#### Using NetBeans IDE
 
-Generate bills by selecting products and quantities.
+1. Open NetBeans, select **File > Open Project**, and open the cloned project folder.  
+2. Make sure your MySQL server is running.  
+3. Update your database credentials in `ConnectionProvider.java` as shown above.  
+4. Right-click on `login.java` in the project explorer and select **Run File**.  
 
-Save and view PDF invoices named by customer and date.
+## 🚀 Usage
 
-Manage user accounts through the users table for authentication (if implemented).
+* Use the GUI to add, update, and delete products.  
+* Generate bills by selecting products and quantities.  
+* Save and view PDF invoices named by customer and date.  
+* Manage user accounts through the `users` table for authentication (if implemented).  
 
-📝 Notes
-Ensure your MySQL server is running before launching the application.
+## 📝 Notes
 
-The PDF invoices are stored locally on your system for each transaction.
+* Ensure your MySQL server is running before launching the application.  
+* The PDF invoices are stored locally on your system for each transaction.  
