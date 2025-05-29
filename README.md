@@ -19,6 +19,41 @@ A Java-based Billing Software designed for retail stores and small businesses to
 * **JDBC** – Java Database Connectivity  
 * **iText** – PDF generation  
 
+## 📦 Libraries Used
+
+### 1. **AbsoluteLayout.jar**
+Used for absolute positioning of Swing components. Typically utilized with NetBeans GUI Builder for visually designing user interfaces.
+
+### 2. **PostgreSQL JDBC Driver (postgresql-42.5.4.jar)**
+Allows the application to connect and interact with a PostgreSQL database via JDBC.
+
+### 3. **MySQL JDBC Driver (mysql-connector-j-9.2.0.jar)**
+Enables Java applications to connect to and interact with MySQL databases.
+
+### 4. **Java EE 6 Endorsed API Libraries**
+- `javax.annotation.jar`: Provides standard Java annotations like `@PostConstruct`, `@PreDestroy`, etc.
+- `jaxb-api-osgi.jar`: Used for Java-XML data binding via JAXB.
+- `webservices-api-osgi.jar`: Provides API support for building SOAP-based web services.
+
+### 5. **rs2xml.jar**
+Facilitates the easy population of `JTable` components with data from a JDBC `ResultSet`.
+
+### 6. **itextpdf-5.1.0.jar**
+Library used to generate and manipulate PDF documents. Useful for exporting reports and documents from the application.
+
+## ☕ JDK Used
+
+- **Java Development Kit (JDK) 23**  
+  This project is compiled and run using JDK 23.
+
+---
+
+## 📌 Notes
+- Ensure all `.jar` files are included in your project's build path.
+- Use the appropriate JDBC driver depending on whether you're connecting to MySQL or PostgreSQL.
+- If using NetBeans, drag-and-drop UI components with AbsoluteLayout for easier UI design.
+
+
 ## 📸 Screenshots
 
 **Add Product**  
