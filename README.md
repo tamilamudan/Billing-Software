@@ -55,6 +55,8 @@ Library used to generate and manipulate PDF documents. Useful for exporting repo
 
 
 ## 📸 Screenshots
+**Home**  
+![image](https://github.com/user-attachments/assets/9556996c-c894-44f8-9c87-ddc9517540d9)
 
 **Add Product**  
 ![Add Product](https://github.com/user-attachments/assets/95c3e8cc-71c4-44bd-838c-b087af3dcf6a)
